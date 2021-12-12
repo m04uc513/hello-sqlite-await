@@ -1,0 +1,44 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+
+    <title>Welcome to Glitch!</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h2>Your Number</h2>
+    </header>
+
+    <main>
+      <p>番号を入力してください</p>
+      
+      <form>
+        <input name="dream" aria-label="a new dream" type="text" maxlength="100" placeholder="Dreams!">
+        <button type="submit" id="submit-dream">Submit Dream</button>
+      </form>
+      
+      <section class="dreams">
+        <ul id="dreams"></ul>
+        <button id="clear-dreams">
+          Clear Dreams
+        </button>
+      </section>
+      
+    </main>
+
+    <footer>
+      Made with <a href="https://glitch.com">Glitch</a>!
+    </footer>
+  </body>
+</html>
